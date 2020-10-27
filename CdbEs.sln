@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6D7A5111-CBB7-43B7-BB50-44ADFD754F87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BA1D1C2B-DB6C-42EB-89FE-CB15375E67C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eng", "eng", "{A53D359B-35AF-4798-A16D-9ED1C37EF7CD}"
+	ProjectSection(SolutionItems) = preProject
+		eng\AssemblyVersioning.props = eng\AssemblyVersioning.props
+		eng\CodeAnalysis.props = eng\CodeAnalysis.props
+		eng\NewOrbit.NETStandard.props = eng\NewOrbit.NETStandard.props
+		eng\NewOrbit.NETStandard.targets = eng\NewOrbit.NETStandard.targets
+		eng\NewOrbit.NETStandard.Test.props = eng\NewOrbit.NETStandard.Test.props
+		eng\NewOrbit.ruleset = eng\NewOrbit.ruleset
+		eng\NewOrbit.Tests.ruleset = eng\NewOrbit.Tests.ruleset
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59245AF5-34B3-48EF-BF13-A68387D819E6}
+	EndGlobalSection
+EndGlobal

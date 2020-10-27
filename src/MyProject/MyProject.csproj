@@ -1,8 +1,0 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-    <!-- <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), NewOrbit.NetStandard.targets))\NewOrbit.NetStandard.targets" /> -->
-
-    <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
-    </PropertyGroup>
-
-</Project>
