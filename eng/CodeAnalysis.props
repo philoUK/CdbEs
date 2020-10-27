@@ -1,0 +1,44 @@
+<Project>
+    <PropertyGroup>
+        <!-- This is due to aspnet/Mvc #7852 -->
+        <NoWarn>$(NoWarn),8032</NoWarn>
+        <!-- Mostly moved to .editorconfig, except that only IDE supports that so far.  -->
+        <!-- <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)NewOrbit.Package.ruleset</CodeAnalysisRuleSet> -->
+        <!--<DocumentationFile/>-->
+        <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+        <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Net.Compilers" Version="3.3.1">
+              <PrivateAssets>all</PrivateAssets>
+             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+
+        <PackageReference Include="Microsoft.CodeAnalysis" Version="3.4.0-beta4-final" PrivateAssets="All" />
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.7">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="SerilogAnalyzer" Version="0.15.0" />
+        <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.113">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Text.Analyzers" Version="2.6.4">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.DotNet.Analyzers.Compatibility" Version="0.2.12-alpha">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+        <!--
+            I _think_ I'm seeing this, "xUnit.Analyzers cannot be loaded side-by-side"
+            https://github.com/xunit/xunit/issues/1704 -->
+        <PackageReference Include="xunit.analyzers" Version="0.10.0" />
+    </ItemGroup>
+</Project>

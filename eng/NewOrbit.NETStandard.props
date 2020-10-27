@@ -1,0 +1,17 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <!-- TODO: Use the new NewOrbit rules -->
+    <!-- Mostly moved to .editorconfig, except that only IDE supports that so far.  -->
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)NewOrbit.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- When you bump the product version, set Major and Minor version just below -->
+    <MajorVersion>99</MajorVersion>
+    <MinorVersion>99</MinorVersion>
+  </PropertyGroup>
+
+  <Import Project="AssemblyVersioning.props" />
+  <Import Project="CodeAnalysis.props" />
+</Project>

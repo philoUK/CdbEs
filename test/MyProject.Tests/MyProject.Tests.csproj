@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Directory.Build.props))\eng\NewOrbit.NETStandard.Test.props" />
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\MyProject\MyProject.csproj" />
+    </ItemGroup>
+</Project>
